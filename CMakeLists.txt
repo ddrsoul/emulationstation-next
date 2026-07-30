@@ -115,6 +115,11 @@ if(ROCKNIX)
   add_definitions(-DROCKNIX)
 endif()
 
+if(BATTERYPLUS)
+  MESSAGE("batteryplus build")
+  add_definitions(-DBATTERYPLUS)
+endif()
+
 # disable kodi menu
 if(DISABLE_KODI)
   MESSAGE("Kodi disabled")
